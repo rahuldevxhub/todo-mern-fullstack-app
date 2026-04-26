@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+                 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+    
+   
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.9rem;
+    max-width: 1100px;
+    margin:0rem auto -6rem;
+    height: 100vh;
+
+}
+
+.intro-text h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tagline1{
+    color:#1a2e35 ;
+}
+.tagline2{
+    color:#38BDF8 ;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+.landing-btn{
+    margin-top: 1rem;
+    display:inline-block;
+    padding: 0.8rem 1rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+   font-family:'Poppins', sans-serif ;
+   
+}
+.red{
+    background-color:#0A2540;
+    color: #ffff;   
+}
+
+.blue{
+    background-color:#38BDF8;
+    color: #ffff;
+    margin-left: 1.5rem;
+}
+
+
+
+/* Center the card */
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+}
+
+/* Card */
+.login-card {
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* Heading */
+.login-card h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Form layout */
+.login-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+form label {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Inputs */
+form input {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 15px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: 0.2s;
+}
+
+/* Input focus effect */
+form input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+
+/* User text (LEFT aligned) */
+.user {
+    
+    font-size: 13px;
+    margin-top: 10px;
+    align-self: flex-end; 
+}
+
+/* Button */
+.lr-btn {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button hover */
+.lr-btn :hover {
+    background: #0056b3;
+}
+
+.add-task{
+  font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+   
+}
+
+.add-task h1{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.add-task input{
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 50%;
+   
+}
+.createTaskBtn{
+  margin-bottom: 16px;
+}
+
+
+
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #f8f9fa;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.card-header {
+  background-color: #e9ecef;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Header content (title + status) */
+.chead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Title */
+.card-header h6 {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Status styles */
+.com {
+  color: green;
+  font-weight: 600;
+}
+
+.inc {
+  color: red;
+  font-weight: 600;
+}
+
+/* Body */
+.card-body {
+  padding: 15px;
+}
+
+/* Title inside body */
+.card-body h6 {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* Description */
+.card-text {
+  margin-bottom: 10px;
+  color: #333;
+  line-height: 1.5;
+  /* IMPORTANT: prevents weird spacing */
+  letter-spacing: normal;
+  font-family: inherit;
+  white-space: normal;
+}
+
+/* Date */
+.card-body h6:last-child {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Footer */
+.card-footer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 10px 15px;
+}
+
+/* Buttons */
+.card-footer .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+/* Optional: icon size */
+.card-footer svg {
+  font-size: 20px;
+}
+.card-container{
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.card-container .card{
+  margin-left: 30px;
+  width: 18em;
+}
+
+.filter-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:20px;
+}
+.filter-container select{
+  margin-left: 20px;
+
+  padding: 10px;
+  border-radius: 5px;
+}
+
