@@ -1,4 +1,6 @@
-import axios from "axios";
+import axios from "axios"; 
+
+const baseUrl = import.meta.env.VITE_APP_BASEURL;
 
 
 const user = JSON.parse(localStorage.getItem('auth') || '{}');
@@ -6,19 +8,19 @@ const user = JSON.parse(localStorage.getItem('auth') || '{}');
 axios.defaults.headers.common['Authorization'] = `Bearer ${user?.user?.token || ""} `;
 
 const createTodo = (data)=> {
-    return axios.post('http://localhost:8080/api/v1/todo/create',data)
+    return axios.post(`${baseUrl}/todo/create`,data)
 
 }
 
 const getAllTodo = (id)=> {
-    return axios.post(`http://localhost:8080/api/v1/todo/getall/${id}`)
+    return axios.post(`${baseUrl}/todo/getall/${id}`)
 
 }
 const updateTodo = (id,data) => {
-    return axios.patch(`http://localhost:8080/api/v1/todo/update/`+id,data)
+    return axios.patch(`${baseUrl}/todo/update/`+id,data)
 }
 const deleteTodo = (id) => {
-    return axios.delete(`http://localhost:8080/api/v1/todo/delete/`+id)
+    return axios.delete(`${baseUrl}/todo/delete/`+id)
 
 }
 
